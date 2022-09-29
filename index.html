@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de música</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <script src="js/index.js"></script>
+</head>
+<body id="body">
+    <p id="hi">HELLO!</p>
+    <h1 id="h1">Some of my favorite<br>songs</h1>
+    <p id="description">This is a playlist of my favorite songs.</p>
+
+    <p id="lista_reproduccion">Playlist</p>
+    <div id="playlist"></div>
+
+    <div id="music_player">
+        <img src="images/believe.png" alt="believe" id="mainImage" width="300" height="300">
+        <p id="song">Believe</p>
+        <p id="artist">Cher</p>
+        
+        <button id="loop" type="button"><i class="fas fa-retweet"></i></button>
+        <div id="buttons">
+            <button id="back" type="button"><i class="fas fa-step-backward"></i></button>
+            <button id="play" type="button"><i class="fas fa-play"></i></button>
+            <button id="pause" type="button" style="visibility: hidden;display: none;"><i class="fas fa-pause"></i></button>
+            <button id="next" type="button"><i class="fas fa-step-forward"></i></button>
+        </div>
+        <button id="stop" type="button"><i class="fas fa-stop"></i></button>
+    </div>
+
+</body>
+</html>

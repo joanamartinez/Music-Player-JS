@@ -1,0 +1,153 @@
+@font-face {
+    font-family: arsenica;
+    src:url("fonts/ArsenicaTrial-Bold.ttf");
+}
+
+@font-face {
+    font-family: bebas;
+    src:url("fonts/Bebas-Regular.ttf");
+}
+
+@font-face {
+    font-family: cafe;
+    src:url("fonts/Louis\ George\ Cafe.ttf");
+}
+
+body { 
+    /*background: linear-gradient(90deg, rgba(255,253,231,1) 0%, rgba(248,249,108,1) 51%, rgba(250,251,60,1) 100%);*/
+    background: linear-gradient(90deg, rgba(255,231,248,1) 0%, rgba(249,108,218,1) 51%, rgba(255,0,108,1) 100%);
+}
+
+img {
+    position: absolute;
+    top: 22%;
+    right: 0;
+    padding-right: 150px; 
+}
+
+#hi{
+    font-size: 25px;
+    font-family: bebas;
+    margin-top: 80px;
+    margin-left: 50px;
+    color:black;
+    opacity: 80%;
+}
+
+#h1{
+    font-size: 50px;
+    font-family: arsenica;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: black;
+}
+
+#lista_reproduccion{
+    font-family: arsenica;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+#description{
+    font-family:cafe;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+#playlist{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: fit-content;
+}
+
+#playlist button{
+    opacity: 0.8;
+    transition: 0.35s;
+}
+
+#playlist button:hover{
+    opacity: 1;
+}
+
+#list{
+    padding: 10px;
+    display: grid;
+    font-family: cafe;
+    margin-left: 50px;
+    font-size: 20px;
+    background-color:transparent;
+    border: transparent;
+}
+
+#list:hover{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #1a1a1a;
+    color: beige;
+}
+
+#song{
+    font-family: bebas;
+    font-size: 18px;
+    position: absolute;
+    top: 68%;
+    left: 72%;
+}
+
+#artist{
+    font-family: bebas;
+    font-size: 18px;
+    position: absolute;
+    top: 72%;
+    left: 72%;
+    color:rgb(44, 44, 44);
+}
+
+#loop{
+    top: 80%;
+    left: 71%;
+    position:absolute;
+}
+
+#stop {
+    top: 80%;
+    left: 87%;
+    position:absolute;
+}
+
+#buttons {
+    display: inline;
+    position:absolute;
+    top: 80%;
+    left: 76%;
+}
+
+#play, #pause, #next, #stop, #loop, #back {
+    transition: all .5s ease;
+    color: black;
+    border: 3px solid black;
+    font-family:bebas;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    border-radius: 50px;
+}
+#play:hover, #pause:hover, #next:hover, #stop:hover, #loop:hover, #back:hover {
+    color: white;
+    background-color: black;
+}
+
+
+@media (min-width: 600px) {
+    #music_player{
+        display: flex;
+    }
+}
